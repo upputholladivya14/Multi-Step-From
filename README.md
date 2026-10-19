@@ -1,39 +1,50 @@
-## React
+# Multi-Step Form Using React
 
-This is a simple React application. This application serves as a basic template for a react applications.  
-This project is bootstrapped with [Vite](https://vitejs.dev/guide/).
+## Project Description
 
-## How to run
+The Multi-Step Form is a web application developed using React that allows users to enter their details through multiple steps. Instead of displaying all the fields on a single page, the form is divided into separate sections to make the registration process simple and organized.
 
-1. Before running the application, make sure all dependencies are installed. To install dependencies, run following command in terminal:
+The form collects personal details, educational information, skills, and project details. Users can navigate between steps using the Next and Previous buttons. The application also includes basic validation to ensure that the required personal details are filled in before moving to the next step.
 
-   ```sh
+## Features
+
+- Collects personal details such as name, email, gender, and phone number.
+- Collects educational details such as college, branch, and CGPA.
+- Provides separate steps for skills and project information.
+- Allows navigation using Next and Previous buttons.
+- Prevents users from proceeding when required personal details are empty.
+- Displays the Submit button only on the final step.
+- Uses React state to manage the current step and form interactions.
+
+## Technologies Used
+
+- **React.js** – For building the user interface.
+- **JavaScript** – For handling form logic and validation.
+- **HTML** – For structuring the form.
+- **CSS** – For styling the application.
+
+## How to Run the Project
+
+1. Install Node.js on your computer.
+2. Open the project folder in VS Code.
+3. Open the terminal and install the required dependencies:
+
+   ```bash
    npm install
    ```
 
-2. Once dependencies are installed, run the following command to start the application:
+4. Start the development server:
 
-   ```sh
+   ```bash
    npm run dev
    ```
 
-3. Refresh the URL in simple browser to see the output.
+5. Open the local URL displayed in the terminal to view the application in your browser.
 
-## FAQs & Debugging
+## Learning Outcomes
 
-### 1. I do not see browser in my workspace
+This project helps in understanding React components, the `useState` hook, conditional rendering, event handling, form validation, and navigation between multiple steps.
 
-Studio will automatically open the app in a new browser tab. If not, you can use the following steps to open the simple browser
+## Conclusion
 
-1. From VS Code command pallette(`Ctrl/Cmd + Shift + P`), run **Studio Manager: SimpleBrowser Default URL** command. This will open the app in a new browser tab.
-
-2. Your app runs on hosted env which can be accessed using host id, port provided in file **.vscode/.studio/studio-env.json**. Use values to create the URL as follows:
-   `https://<STUDIO_HOST_ID>-3000.<STUDIO_DOMAIN>`
-
-### 2. Getting `vite: not found` error
-
-This means node_modules are missing in your workspace, please refer the 'How to run' section and make sure you have followed the steps in sequence
-
-### 3. Can I use create-react-app instead Vite?
-
-Yes, you can use create-react-app instead Vite, the default workspace is loaded with Vite setup, you can remove the Vite dependencies, add create-react-app dependencies and update the scripts to start using create-react-app.
+The Multi-Step Form provides a simple and organized way to collect student information. It demonstrates how React can be used to create interactive forms with step-by-step navigation and basic input validation.
